@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AlemShewitModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="AlemShewitEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="ContactForms" EntityType="AlemShewitModel.ContactForm" />
+  </EntityContainer>
+  <EntityType Name="ContactForm">
+    <Key>
+      <PropertyRef Name="ContactFormID" />
+    </Key>
+    <Property Name="ContactFormID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Message" Type="String" MaxLength="2000" Unicode="true" FixedLength="false" />
+  </EntityType>
+</Schema>

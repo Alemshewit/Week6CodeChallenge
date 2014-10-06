@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+
+<body>
+    <form method="post" action="default.aspx" id="form1">
+        <div class="layoutPage">
+            <div class="header">            
+                <a href="/">
+                    <img src="~/Content/themes/base/images/zCqqBm1412214692.png" alt="" style=" float:left; left: 120px; top: 60px; width: 650px;" />
+                </a>
+                <div class="TopRightLinks">
+                    <a class="active" href ="@Url.Action("Index", "Home")">HOME</a> |
+                    <a href ="@Url.Action("Index","About")">ABOUT</a> |
+                    <a href ="@Url.Action("Index","Work")">CAREER</a> |
+                    <a href ="@Url.Action("Index","Career")">WORK</a>
+                    <a href ="@Url.Action("Index","Contacts")">CONTACT</a>
+                </div>
+            </div>
+
+           <div class="navigationbar">
+            <ul id="navlinks" class="mainlinks">                         
+                <li id="sub_0_5"><a href="@Url.Action("Index", "Blog")">Alem's Blog</a></li>
+                <li id="sub_0_4"><a href="@Url.Action("Index", "Contact")">Contact Me</a></li>
+                <li id="sub_0_3"><a href="@Url.Action("Index", "Resume")">My Resume</a></li>
+                 <li id="sub_0_2"><a href="@Url.Action("Index", "Work")">Code Sample</a></li>
+                <li id="sub_0_1"><a href="@Url.Action("Index", "About")">About Me</a></li>
+                            
+            </ul>
+
+                 @RenderBody()
+                                
+            <div class="footer">
+                <div class="column">
+                    <p>Developed and owned by <a href="google.com">AlemShewit</a>. © Copyright @DateTime.Now.Year. All rights reserved.</p>
+                </div>
+                
+                <div class="addthis">
+                    <a class="active" href ="@Url.Action("Index", "Home")">HOME</a> |
+                    <a href ="@Url.Action("About", "Home")">ABOUT</a> |
+                    <a href ="@Url.Action("Work", "Home")">WORK</a> |
+                    <a href ="@Url.Action("Contact", "Home")">CONTACT</a>
+                </div>
+                <div class="floatfix">
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        var pageTracker = _gat._getTracker("UA-134547-8");
+        pageTracker._trackPageview();
+    </script>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,37 @@
+﻿@model Week6CodeChallenge.Models.ContactForm
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Contact Me</h2>
+<div class="contactContainer">
+<h1 id="contactHeader"><strong>Write Me</strong></h1>
+
+<form class="textarea" id="contactForm" action="@Url.Action("Index", "Contact")" method ="post">
+    <fieldset>
+        <legend>Fill the form below and we will contact you soon</legend>
+ 
+        @Html.LabelFor(model => model.FirstName)
+        @Html.EditorFor(model => model.FirstName) @Html.ValidationMessageFor(model => model.FirstName)
+
+        @Html.LabelFor(model => model.LastName)
+        @Html.EditorFor(model => model.LastName) @Html.ValidationMessageFor(model => model.LastName)
+ 
+        @Html.LabelFor(model => model.Email)
+        @Html.EditorFor(model => model.Email) @Html.ValidationMessageFor(model => model.Email)
+ 
+        @Html.LabelFor(model => model.PhoneNumber)
+        @Html.EditorFor(model => model.PhoneNumber) @Html.ValidationMessageFor(model => model.PhoneNumber)
+ 
+        @Html.LabelFor(model => model.Message)
+        @Html.TextAreaFor(model => model.Message) @Html.ValidationMessageFor(model => model.Message)<br />
+ 
+    <input type="submit" class="btnprimary" value="Send Message" data-url="@Url.Action("Thankyou", "AJAXGET")" data-action="@Url.Action("Index", "Contact")">
+    </fieldset>
+    </form>
+    </div>
+}@*Add a refrence to jQuery Vlaidation this is the javascript that 
+actually perfomrs our validation using jQuery*@
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}

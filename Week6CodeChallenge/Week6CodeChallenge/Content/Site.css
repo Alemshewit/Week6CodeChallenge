@@ -1,0 +1,385 @@
+﻿
+/* Styles for basic forms
+-----------------------------------------------------------*/
+
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+/*Style for about section*/
+ul {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+li {
+    float: left;
+    list-style: none;
+    padding: 5px 10px 5px 10px;
+}
+li a {
+        color: white;
+        font-family: Arial;
+        text-decoration: none;
+}
+#content_wrapper {
+        width: 400px;
+        height: 300px;
+        background-color: #ccc;
+        margin: 0px;
+        padding: 6px;
+        overflow: hidden;
+}
+/*ContactForm styles*/
+.field-validation-error {
+    color: #ff0000;
+}
+ 
+.field-validation-valid {
+    display: none;
+}
+ 
+.input-validation-error {
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+ 
+.validation-summary-errors {
+    font-weight: bold;
+    color: #ff0000;
+}
+ 
+.validation-summary-valid {
+    display: none;
+}
+/*============new import=================*/
+
+
+html {
+    background-color: #2d2d2d;
+    background-position:left top;
+    margin:0px;
+	font-family:tahoma;
+	font-size:11px;
+	line-height:18px;
+	overflow-y:scroll;
+}
+.floatfix {
+    display:block;
+    clear:both;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+img {
+    border:none;
+}
+
+p {
+    margin:0px;
+    margin-bottom:5px;
+}
+
+h1 {
+    letter-spacing:1px;
+    margin:auto;
+    margin-bottom:10px;
+    color:#fff;
+    font-weight: bold;
+}
+
+h2 {
+    font-size:14px;    
+    letter-spacing:1px;
+    margin:0px;
+    margin-bottom:6px;
+    color:#11bd2d;
+}
+
+h3 {
+    font-size:12px;
+    font-weight:bold;
+    margin:0px;
+    margin-bottom:6px;
+    color:#11bd2d;
+}
+
+
+
+label {
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    margin:0px;
+    padding:5px;
+}
+form {
+    float:left;
+    padding-top:40px;
+    padding-bottom: 150px;
+}
+fieldset {
+    margin: auto;
+    width: 510px;
+    height:300px;
+    border-color: #fff;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius:30px;
+
+}
+.contactContainer {
+    width:100%;
+    margin-top: 10px;
+    margin:auto;
+}
+
+.btnprimary {
+    color:#ffffff;
+    border-radius:10px;
+    padding:5px 7px 5px 7px;
+    background-color:#11bd2d;
+    border-color:#59e16f;
+}
+.btnprimary:hover {
+    background-color: #ffffff;
+    color: #11bd2d;
+}
+ValidationMessageFor {
+}
+ 
+
+/* FOOTER
+================================================ 
+*/
+.footer {
+    background-color:#0f0f0f;
+    margin-top:10px;
+    width: 960px;
+    margin:auto;
+    padding:15px;
+    padding-top:10px;
+    color:#ffffff;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.footer a {
+    color:#ffffff; 
+}
+.footer .column {
+    float:left;
+    margin-right:30px;
+}
+.footer .addthis{
+    float:right;
+    margin-top:5px;
+}
+.addthis a {
+        text-decoration:none;
+}
+.addthis a:hover{
+    color:#11bd2d;
+    background-color: #fff;
+    border-radius:2px;
+}
+
+.column {
+    text-align: center;
+}
+#qod-quote {
+margin:auto;
+}
+
+/* TopHeader
+============================================    
+*/
+.TopRightLinks {
+    position:absolute;
+    right:8px;
+    top:15px;
+    text-align:right;
+    color:#11bd2d;
+}
+.TopRightLinks a {
+    text-decoration:none;
+    color:#fff;
+    margin-left:8px;
+    margin-right:8px;    
+}
+.TopRightLinks a:hover {
+    background-color:#ffffff;
+    border-radius: 2px;
+    color:#000;
+}
+
+.header {
+    width: 100%;
+    height:85px;
+    clear:both;
+}
+.navigationbar {
+    width: 100%;
+    padding-top:1.25px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    text-align: left;
+}
+.mainlinks {        
+    
+}
+.mainlinks li { 
+    margin-right:2px;
+    float:right; 
+    display: inline-block;
+    text-align:center;
+
+}
+
+.mainlinks a {
+    padding:10px;
+    background-color:#0f0f0f;
+    color:#fff;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:11px;
+    letter-spacing:1px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    box-shadow: rgba(0,0,0,.20) 1px 1px ,1px .5px;
+}
+.mainlinks a:hover {
+    color:#000;
+    background-color:#fff; 
+
+}
+/* WORKSPACE AREAS
+    ================================================
+*/
+.layoutPage {
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    overflow:auto;
+}
+
+
+/* FRONT PAGE
+    ================================================
+*/
+.ready {
+    padding-top:15px;
+}
+.aboutpage {
+    padding-bottom: 10px;
+    width:960px;
+    margin:auto;
+}
+.pagePhoto {
+    margin:auto;
+    width:960px;
+}
+.mainbody {
+    color:#fff;
+}
+.mainbodyID {
+    font-size: 13px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom:0px;
+    background-color:#ffffff;
+    border:.25px solid #11bd2d;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    border-width: 0px 0px 1px 0px;
+    box-shadow: rgba(0,0,0,.20) 1px 1px ,1px .5px;
+
+}
+.paragraph {
+    padding:5px;
+    padding-top:10px;
+    border:.25px solid #11bd2d;
+    height:200px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    background-color:#ffffff;
+    box-shadow: rgba(0,0,0,.20) 1px 1px ,1px .5px;
+
+}
+/*WorkINDEX
+    ==============================================  
+*/
+
+.workContainer {
+    background-color:#a3fcb2; 
+    border-radius: 50px;
+    width: 960px;
+    margin:auto;
+    margin-top:25px;
+    margin-bottom:10px;
+    border:1px solid #11bd2d;
+}
+
+.firstLine {
+    width: 450px;
+    margin:auto;
+       
+}
+.secondLine {
+    width: 450px;
+    margin:auto;
+}
+.desc {
+    font-size: 14px;
+    font-weight:bold;
+    color: #fff;
+    text-align:center;
+}
+/*About
+    =============================================
+*/
+.h2about {
+    width: 960px;
+    margin:auto;
+} 
+.container {
+    border:1px;
+    border-color: #ffffff;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    width: 850px;
+    margin:auto;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+.tabsdiv {
+    width:100%;
+    padding:80px;
+    margin:auto;
+}
+.body {
+    padding:80px;
+    width:960px;
+    margin:auto;
+}

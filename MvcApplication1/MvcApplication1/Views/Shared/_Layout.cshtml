@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+
+<body>
+    <form method="post" action="default.aspx" id="form1">
+        <div class="page">
+            <div class="top">
+                <ul class="tabs">
+                    <li id="sub_0_3"><a href>Abour Me</a></li>
+                    <li id="sub_0_2"><a href>Work Sample</a></li>
+                    <li id="sub_0_4"><a href>Resume</a></li>
+                    <li id="sub_0_5"><a href>Contact Me</a></li>
+                    <li id="sub_0_1"><a href>Alem's Blog</a></li>
+                </ul>                
+                <a href="/">
+                    <img src="~/Content/themes/base/images/Icons/namegraphics/65KPRx1412214555.png" alt="" style="position: absolute; left: 120px; top: 60px; width: 720px;" />
+                </a>
+                <div class="TopRightLinks">
+                    <a class="active" href ="@Url.Action("Index", "Home")">HOME</a> |
+                    <a href ="@Url.Action("Index","About")">ABOUT</a> |
+                    <a href ="@Url.Action("Index","Work")">WORK</a> |
+                    <a href ="@Url.Action("Index","Contact")">CONTACT</a>
+                </div>
+            </div>
+
+            <div class="submenubar">
+                 <ul id="submenu_0" class="submenu"></ul>
+            </div>
+
+                 @RenderBody()
+                                
+            <div class="footer">
+                <div class="column">
+                    <p>Developed and owned by <a href="google.com">AlemShewit</a>. © Copyright @DateTime.Now.Year. All rights reserved.</p>
+                </div>
+                <div class="column">
+                    <a href="https://www.facebook.com/alemshewitt">
+                        <img src="~/Content/themes/base/images/Icons/facebook.png" alt="" style="width: 30px;" /></a>
+                    <a href="">
+                        <img src="~/Content/themes/base/images/Icons/gmail.png" alt="" style="width: 30px;" /></a>
+                    <a href="https://www.linkedin.com/pub/alemshewit-weldearegay/75/167/b0b">
+                        <img src="~/Content/themes/base/images/Icons/linkedin.png" alt="" style="width: 30px;" /></a>
+                    <a href="https://twitter.com/followers">
+                        <img src="~/Content/themes/base/images/Icons/twitter.png" alt="" style="width: 30px;" /></a>
+                    <a href="https://plus.google.com/u/0/105643401203186360202/posts">
+                        <img src="~/Content/themes/base/images/Icons/google_plus.png" alt="" style="width: 30px;" /></a>
+                    <a href="https://github.com/Alemshewit">
+                        <img src="~/Content/themes/base/images/Icons/github.png" alt="" style="width: 30px;" /></a>
+                </div>
+                <div class="addthis">
+                    <a class="active" href ="@Url.Action("Index", "Home")">HOME</a> |
+                    <a href ="@Url.Action("About", "Home")">ABOUT</a> |
+                    <a href ="@Url.Action("Work", "Home")">WORK</a> |
+                    <a href ="@Url.Action("Contact", "Home")">CONTACT</a>
+                </div>
+                <div class="floatfix">
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        var pageTracker = _gat._getTracker("UA-134547-8");
+        pageTracker._trackPageview();
+    </script>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
